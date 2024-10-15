@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "16" # Especifica la versión de Node.js que necesitas
+
+cache:
+  directories:
+    - "node_modules" # Cachea las dependencias para acelerar el proceso
+
+script:
+  - npm install         # Instala las dependencias
+  - npm test            # Ejecuta las pruebas (si tienes pruebas configuradas)
+  - npm run build       # Construye el proyecto para producción
